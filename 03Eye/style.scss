@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "base";
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+.main {
+	position: relative;
+	z-index: 0;
+
+	width: 500px;
+	height: 500px;
+	margin: 10% auto 0;
+
+	cursor: url(./butterfly.png);
+
+	border-radius: 50px;
+	background-image: url("./bg.jpg");
+	background-size: cover;
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.bf {
+	position: absolute;
+	z-index: 1;
+	top: 141px;
+	left: 355px;
+
+	overflow: hidden;
+
+	width: 87px;
+	height: calc(87px / 69 * 51);
+
+	background-image: url("./butterfly.png");
+	background-size: cover;
+
+	filter: brightness(0%);
+
+	&:hover {
+		animation: ani2 0.05s infinite alternate;
+
+		filter: drop-shadow(0 0 10px white);
+	}
+}
+.ani {
+	animation: 2s ani linear infinite;
+}
+.text {
+	margin-top: 30px;
+
+	text-align: center;
+
+	color: rgb(105, 105, 105);
+
+	font-family: "Nothing You Could Do", cursive;
+	font-size: 2rem;
+}
+// Animation
+@keyframes ani {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes ani2 {
+	0% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(-5deg) scale(1.1);
+	}
+}

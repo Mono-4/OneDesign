@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  z-index: 0;
+  width: 500px;
+  height: 500px;
+  margin: 10% auto 0;
+  cursor: url(./butterfly.png);
+  border-radius: 50px;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.bf {
+  position: absolute;
+  z-index: 1;
+  top: 141px;
+  left: 355px;
+  overflow: hidden;
+  width: 87px;
+  height: calc(87px / 69 * 51);
+  background-image: url("./butterfly.png");
+  background-size: cover;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
+.bf:hover {
+  -webkit-animation: ani2 0.05s infinite alternate;
+          animation: ani2 0.05s infinite alternate;
+  -webkit-filter: drop-shadow(0 0 10px white);
+          filter: drop-shadow(0 0 10px white);
+}
+
+.ani {
+  -webkit-animation: 2s ani linear infinite;
+          animation: 2s ani linear infinite;
+}
+
+.text {
+  margin-top: 30px;
+  text-align: center;
+  color: dimgray;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2rem;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ani2 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
