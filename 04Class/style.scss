@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "base";
+
+.inner {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: red;
+	max-height: 100vh;
+}
+.title {
+	font-size: 5rem;
+	text-align: center;
+}
+.sub-title {
+	margin-left: 40px;
+	font-size: 3rem;
+}
+.table {
+	border-radius: 10px;
+	margin: 0 auto;
+	th,
+	td {
+		padding: 10px;
+		border: solid 1px black;
+		text-align: center;
+	}
+}

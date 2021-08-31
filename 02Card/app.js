@@ -4,7 +4,7 @@ let card = document.querySelector(".card");
 let w = window.innerWidth;
 let h = window.innerHeight;
 let i, j;
-console.log(w);
+
 for (i = 0; i < Math.floor(h / 150); i++) {
 	for (j = 0; j < Math.floor(w / 100); j++) {
 		if (i === 0 && j === 0) {
@@ -16,6 +16,7 @@ for (i = 0; i < Math.floor(h / 150); i++) {
 	}
 }
 let cards = document.querySelectorAll(".card__main");
+
 cards.forEach((value) => {
 	value.addEventListener("mouseenter", () => {
 		value.classList.add("card__main--anime");
@@ -24,7 +25,7 @@ cards.forEach((value) => {
 		}, 1000);
 	});
 });
-let card__main = document.querySelectorAll(".card__main");
-card__main.forEach((value) => {
-	value.innerHTML = "";
-});
+// let card__main = document.querySelectorAll(".card__main");
+// card__main.forEach((value) => {
+// 	value.innerHTML = "";
+// });

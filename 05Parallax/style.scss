@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "base";
+$font-size: 8rem;
+body {
+	height: 100vh;
+	background: red;
+}
+.box {
+	margin: 200px auto 0;
+	width: calc(#{$font-size} * 3 + 5px * 4);
+	height: calc(#{$font-size} * 3 + 5px * 4);
+	background: black;
+	position: relative;
+	&__content {
+		font-size: $font-size;
+		border: 5px solid black;
+		line-height: $font-size;
+		position: absolute;
+		background: white;
+		&--1 {
+			width: calc(#{$font-size} * 2 + 5px * 2);
+			height: calc(#{$font-size} + 5px * 2);
+			top: 0;
+			left: 0;
+		}
+		&--2 {
+			width: calc(#{$font-size} + 5px * 2);
+			height: calc(#{$font-size} * 2+ 5px * 2);
+			top: 0;
+			right: 0;
+		}
+		&--3 {
+			width: calc(#{$font-size} + 5px * 2);
+			height: calc(#{$font-size} * 2+ 5px * 2);
+			left: 0;
+			bottom: 0;
+		}
+		&--4 {
+			width: calc(#{$font-size} * 2 + 5px * 2);
+			height: calc(#{$font-size} + 5px * 2);
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
