@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "base";
+body {
+}
+.main {
+}
+.page {
+	position: sticky;
+	top: 0;
+
+	height: 100vh;
+
+	&--1 {
+		background: white;
+		border: 10px black solid;
+	}
+	&--2 {
+		background: black;
+		border: 10px white solid;
+	}
+	&__box {
+		width: 80%;
+		height: 80%;
+		margin: 8% auto;
+
+		border: 10px black solid;
+		border-radius: 50px;
+		&--black {
+			border: 10px white solid;
+		}
+	}
+	&__title {
+		text-align: center;
+
+		color: black;
+		border-bottom: 10px solid black;
+
+		font-size: 5rem;
+		&--black {
+			color: white;
+			border-bottom: 10px solid white;
+		}
+	}
+	&__text {
+		padding: 50px;
+
+		color: black;
+
+		font-size: 2rem;
+		&--black {
+			color: white;
+		}
+	}
+}
