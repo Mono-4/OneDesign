@@ -234,16 +234,6 @@ body {
   font-size: 3rem;
 }
 
-.plan {
-  padding: 100px 0;
-}
-
-.plan__title {
-  margin-bottom: 50px;
-  font-size: 3rem;
-  text-align: center;
-}
-
 .textbook {
   padding: 100px 0;
   background: #d8d8d8;
@@ -310,15 +300,25 @@ body {
   color: #323232;
 }
 
+.plan {
+  padding: 100px 0;
+}
+
+.plan__title {
+  margin-bottom: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .plan__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 1000px;
   padding: 0 10px;
   margin: 0 auto;

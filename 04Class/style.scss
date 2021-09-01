@@ -110,13 +110,6 @@ body {
 	&__text {
 	}
 }
-.plan {
-	padding: 100px 0;
-	&__title {
-		@include title;
-		text-align: center;
-	}
-}
 
 .textbook {
 	@include padding;
@@ -185,12 +178,15 @@ body {
 }
 
 .plan {
+	padding: 100px 0;
 	&__title {
+		@include title;
+		text-align: center;
 	}
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: left;
+		justify-content: center;
 
 		@include inner;
 	}
