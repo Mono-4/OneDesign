@@ -10,41 +10,160 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="inner">
-			<h1 class="title">Class</h1>
-			<h2 class="sub-title">この授業について</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae a
-				blanditiis distinctio voluptas corporis aliquid sequi, nam dolorum
-				consequatur quibusdam sed quis officiis ipsum nostrum culpa voluptates,
-				quisquam voluptate.
-			</p>
-			<h2 class="sub-title">授業日程</h2>
-			<table class="table">
-				<tr>
-					<th>番号</th>
-					<th>日程</th>
-					<th>タイトル</th>
-					<th>課題</th>
-					<th>資料</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>7/6</td>
-					<td>プリンについて</td>
-					<td>プリンを食べる</td>
-					<td><a href="#">資料</a></td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>7/6</td>
-					<td>プリンについて</td>
-					<td>プリンを食べる</td>
-					<td><a href="#">資料</a></td>
-				</tr>
-			</table>
+		<div id="splash">
+			<div id="splash_text"></div>
+			<!--/splash-->
 		</div>
+		<div id="container">
+			<div class="header">
+				<div class="header__menu">
+					<li class="header__list">
+						<a class="header__link" href="#about">この授業について</a>
+					</li>
+					<li class="header__list">
+						<a class="header__link" href="#plan">授業日程</a>
+					</li>
+					<li class="header__list">
+						<a class="header__link" href="#textbook">教科書</a>
+					</li>
+					<li class="header__list">
+						<a class="header__link" href="#contact">問い合わせ</a>
+					</li>
+				</div>
+			</div>
 
+			<div class="key-img">
+				<div class="key-img__bg"></div>
+				<div class="key-img__main">
+					<h1 class="key-img__title">芸術学</h1>
+					<p class="key-img__text">
+						IT08<br />C1クラス担当：へのへのもへじ<br />C2クラス担当：へのへのもへじ<br />M10教室<br />
+					</p>
+				</div>
+			</div>
+			<div class="horizon horizon--intro" id="about">
+				<div class="horizon__inner">
+					<h2 class="horizon__title">この授業について</h2>
+					<p class="horizon__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam hic
+						reiciendis blanditiis at adipisci culpa eius illum exercitationem
+						natus, est cum totam ipsa a, atque rem quaerat commodi quos autem.
+					</p>
+				</div>
+			</div>
+			<div class="plan" id="plan">
+				<h2 class="plan__title">授業日程</h2>
+				<ul class="plan__list">
+					<li class="class-card plan__class-card class-card--today">
+						<div class="class-card__num">1</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">2</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">3</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">4</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">5</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">6</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">7</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+					<li class="class-card plan__class-card">
+						<div class="class-card__num">8</div>
+						<div class="class-card__title">タイトル</div>
+					</li>
+				</ul>
+			</div>
+			<div class="pop-up">
+				<div class="pop-up__main">
+					<div class="pop-up__scroll">
+						<h3 class="pop-up__title"></h3>
+						<h4 class="pop-up__sub-title">授業内容</h4>
+						<p class="pop-up__text"></p>
+						<h4 class="pop-up__sub-title">資料</h4>
+						<p class="pop-up__text"></p>
+						<h4 class="pop-up__sub-title">課題</h4>
+						<p class="pop-up__text"></p>
+					</div>
+					<div class="pop-up__close">close</div>
+				</div>
+				<div class="pop-up__bg"></div>
+			</div>
+			<div class="textbook" id="textbook">
+				<h2 class="textbook__title">教科書</h2>
+				<ul class="textbook__text-list">
+					<li class="textbook__list">
+						<a class="textbook__link" href="#">
+							<img
+								src="https://picsum.photos/1000/500"
+								alt=""
+								class="textbook__img"
+							/>
+							<p class="textbook__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, corporis id. At illo, eveniet deleniti repudiandae
+								eligendi alias vitae, mollitia quo atque sequi, nesciunt
+								expedita nobis inventore recusandae laboriosam veniam.
+							</p>
+						</a>
+					</li>
+					<li class="textbook__list">
+						<a class="textbook__link" href="#">
+							<img
+								src="https://picsum.photos/1000/500"
+								alt=""
+								class="textbook__img"
+							/>
+							<p class="textbook__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, corporis id. At illo, eveniet deleniti repudiandae
+								eligendi alias vitae, mollitia quo atque sequi, nesciunt
+								expedita nobis inventore recusandae laboriosam veniam.
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="horizon horizon--contact" id="contact">
+				<div class="horizon__inner">
+					<h2 class="horizon__title">お問い合わせ</h2>
+					<p class="horizon__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam hic
+						reiciendis blanditiis at adipisci culpa eius illum exercitationem
+						natus, est cum totam ipsa a, atque rem quaerat commodi quos autem.
+					</p>
+				</div>
+			</div>
+			<div class="footer">
+				<small class="footer__copy-right">&copy; 2020 CREATORS</small>
+			</div>
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+		<!--IE11用-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+		<!--不必要なら削除-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+		<!--不必要なら削除-->
+		<!--自作のJS-->
 		<script src="app.js"></script>
 	</body>
 </html>

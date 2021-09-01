@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap");
 body {
   font-family: sans-serif;
   font-size: 16px;
@@ -24,32 +26,433 @@ img {
           box-sizing: border-box;
 }
 
-.inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: red;
-  max-height: 100vh;
+@-webkit-keyframes plan {
+  0% {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+  }
+  51% {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  }
 }
 
-.title {
-  font-size: 5rem;
+@keyframes plan {
+  0% {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+  }
+  51% {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@-webkit-keyframes keyimg {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes keyimg {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kaisei Tokumin", serif;
+  line-height: 2;
+  color: #323232;
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  background: white;
+  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 0 0 auto;
+}
+
+.header__link {
+  padding: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #323232;
+  font-size: 0.9rem;
+}
+
+.header__link:hover {
+  color: white;
+  border-radius: 30px;
+  background: #1e1e1e;
+}
+
+.key-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.key-img__bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.key-img__bg--anime {
+  -webkit-animation: keyimg 2s linear;
+          animation: keyimg 2s linear;
+}
+
+.key-img__main {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.key-img__title {
   text-align: center;
-}
-
-.sub-title {
-  margin-left: 40px;
+  color: white;
   font-size: 3rem;
 }
 
-.table {
-  border-radius: 10px;
+.key-img__text {
+  max-width: 500px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.horizon {
+  padding: 100px 0;
+}
+
+.horizon--intro {
+  color: white;
+  background: #1e1e1e;
+}
+
+.horizon--contact {
+  color: #323232;
+  background-color: white;
+}
+
+.horizon__inner {
+  max-width: 1000px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
-.table th,
-.table td {
-  padding: 10px;
-  border: solid 1px black;
+.horizon__title {
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
+.plan {
+  padding: 100px 0;
+}
+
+.plan__title {
+  margin-bottom: 50px;
+  font-size: 3rem;
   text-align: center;
+}
+
+.textbook {
+  padding: 100px 0;
+  background: #d8d8d8;
+}
+
+.textbook__text-list {
+  max-width: 600px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.textbook__title {
+  margin-bottom: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.textbook__list + .textbook__list {
+  border-top: 1px solid gray;
+}
+
+.textbook__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.textbook__link:hover:after {
+  display: block;
+}
+
+.textbook__link:after {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+  content: "リンクに飛ぶ";
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  line-height: 190px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.textbook__img {
+  width: 110px;
+  height: 150px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.textbook__text {
+  color: #323232;
+}
+
+.plan__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.plan__class-card {
+  margin: 10px 5px;
+}
+
+.class-card {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.class-card__num {
+  text-align: center;
+  font-size: 1.5rem;
+  color: skyblue;
+}
+
+.class-card__title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.class-card--today {
+  border: solid 2px skyblue;
+}
+
+.class-card:hover {
+  -webkit-animation: plan 0.3s forwards;
+          animation: plan 0.3s forwards;
+}
+
+.pop-up {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pop-up__main {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background: white;
+}
+
+.pop-up__scroll {
+  overflow: scroll;
+  height: 400px;
+}
+
+.pop-up__sub-title {
+  margin-top: 10px;
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.pop-up__title {
+  font-size: 2rem;
+}
+
+.pop-up__text {
+  margin-left: 10px;
+}
+
+.pop-up__close {
+  margin-top: 20px;
+  background: #323232;
+  text-align: center;
+  color: white;
+}
+
+.pop-up__bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  background: #1e1e1e;
+}
+
+.footer__copy-right {
+  display: block;
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 50px;
+}
+
+/*========= LoadingのためのCSS ===============*/
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #323232;
+  text-align: center;
+  color: #fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.fadein {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 /*# sourceMappingURL=style.css.map */
